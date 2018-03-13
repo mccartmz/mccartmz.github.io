@@ -1,0 +1,13 @@
+html,
+body { text-align: center;}
+
+.jumbotron { margin-top: 50px;}
+
+
+#welcome, #game-over { font-family: 'Berkshire Swash', cursive;}
+
+
+#start-game { font-weight: bold; border-color: crimson;
+        font-family: 'ABeeZee', sans-serif;}
+
+ul { font-family: 'ABeeZee', sans-serif;}
