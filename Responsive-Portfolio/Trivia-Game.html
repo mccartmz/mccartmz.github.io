@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<title>Geography Trivia</title>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<!-- Added Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Added jQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Added Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=ABeeZee|Berkshire+Swash" rel="stylesheet">
+</head>
+
+<body background="assets/images/globe.jpeg">
+<div class = "container">
+    <!-- Create Jumbotron using Bootstrap -->
+    <!-- Insert Instructions -->
+	<div class = "jumbotron">
+		<div id="welcome">
+        <h1>Geography Trivia Quiz!</h1>
+        <br>
+        <h3>Challenge your geography knowledge by answering as many questions as you can correctly.</h4>
+        <br>
+        <h4>You have 45 seconds to complete the quiz once you press START.</h4>
+        <br>
+        <!-- Insert Start Button -->
+		<button id="start-game"> START</button>
+		</div>
+
+<!-- Display timer created with jquerty -->
+<div id="timer"></div>
+<br>
+<!-- Insert Quiz Questions in Unordered List -->
+<!-- Assign values to each answer -->
+<ul id="triviaGame">
+
+	<div id="Q1">
+		<h4><strong>1) What's the capital of Montana?</strong></h4>
+		<input type="radio" name="Q1" value="incorrect"> Bismarck
+		<input type="radio" name="Q1" value="incorrect"> Boise
+        <input type="radio" name="Q1" value="incorrect"> Fargo
+        <input type="radio" name="Q1" value="correct"> Helena
+	</div>
+
+	<div id="Q2">
+		<h4><strong>2) Which of these lakes is NOT part of the Great Lakes?</strong></h4>
+		<input type="radio" name="Q2" value="correct"> Lake Champlain
+		<input type="radio" name="Q2" value="incorrect"> Lake Huron
+		<input type="radio" name="Q2" value="incorrect"> Lake Erie
+		<input type="radio" name="Q2" value="incorrect"> Lake Michigan
+	</div>
+
+	<div id="Q3">
+		<h4><strong>3) What is the official language of Greenland?</strong></h4>
+		<input type="radio" name="Q3" value="incorrect"> Icelandic
+		<input type="radio" name="Q3" value="incorrect"> English
+		<input type="radio" name="Q3" value="correct"> Greenlandic
+		<input type="radio" name="Q3" value="incorrect"> Danish
+	</div>
+
+	<div id="Q4">
+		<h4><strong>4) If you were in the city of Turin, what country would you be in?</strong></h4>
+        <input type="radio" name="Q4" value="correct"> Italy
+        <input type="radio" name="Q4" value="incorrect"> Tibet
+		<input type="radio" name="Q4" value="incorrect"> Tunisia
+		<input type="radio" name="Q4" value="incorrect"> Chile
+	</div>
+
+	<div id="Q5">
+		<h4><strong>5) Macau is an autonomous territory belonging to which country?</strong></h4>
+		<input type="radio" name="Q5" value="incorrect"> Malaysia
+        <input type="radio" name="Q5" value="incorrect"> Portugal
+        <input type="radio" name="Q5" value="correct"> China
+		<input type="radio" name="Q5" value="incorrect"> Netherlands
+	</div>
+
+	<div id="Q6">
+		<h4><strong>6) The Mexican city of Tijuana borders what U.S city?</strong></h4>
+		<input type="radio" name="Q6" value="incorrect"> San Jose
+		<input type="radio" name="Q6" value="incorrect"> Houston
+		<input type="radio" name="Q6" value="correct"> San Diego
+		<input type="radio" name="Q6" value="incorrect"> El Paso
+	</div>
+
+	<div id="Q7">
+		<h4><strong>7) In what country would you find the temple complex Angkor Wat?</strong></h4>
+		<input type="radio" name="Q7" value="incorrect"> India
+		<input type="radio" name="Q7" value="incorrect"> Turkey
+        <input type="radio" name="Q7" value="incorrect"> Libya
+        <input type="radio" name="Q7" value="correct"> Cambodia
+	</div>
+
+	<div id="Q8">
+		<h4><strong>8) How many US states border the Pacific Ocean?</strong></h4>
+        <input type="radio" name="Q8" value="incorrect"> 6
+        <input type="radio" name="Q8" value="correct"> 5
+		<input type="radio" name="Q8" value="incorrect"> 3
+		<input type="radio" name="Q8" value="incorrect"> 4
+	</div>
+
+	<div id="Q9">
+		<h4><strong>9) In what country would you find Mount Kilimanjaro?</strong></h4>
+        <input type="radio" name="Q9" value="correct"> Tanzania
+        <input type="radio" name="Q9" value="incorrect"> Tibet
+		<input type="radio" name="Q9" value="incorrect"> Pakistan
+		<input type="radio" name="Q9" value="incorrect"> Kenya
+	</div>
+
+	<div id="Q10">
+		<h4><strong>10) The Black Forest is located in what European country?</strong></h4>
+        <input type="radio" name="Q8" value="incorrect"> Poland
+        <input type="radio" name="Q8" value="correct"> Germany
+		<input type="radio" name="Q8" value="incorrect"> Macedonia
+        <input type="radio" name="Q8" value="incorrect"> Latvia
+	</div>
+
+</ul>
+<br>
+<!-- Display finish button created with jquerty -->
+<div id="finished"></div>
+
+<!-- Display final results created with jquerty -->
+<div id="game-over">
+	<h1>Game Over</h1>
+</div>
+
+</div>
+</div>
+
+
+<script type="text/javascript" src="assets\javascript\app.js"></script>
+
+</body>
+</html>
