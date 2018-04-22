@@ -39,7 +39,7 @@ $("#addTrainButton").on("click", function (event) {
     $("#firstTrainTime").val("");
     $("#frequency").val("");
 
-    return false;
+    
 });
 
 // User adds an entry
@@ -62,34 +62,5 @@ database.ref().on("child_added", function (snapshot) {
     //Display data in the table
     $("#trainTable > tbody").append("<tr><td>" + name + "</td><td>" + destination + "</td><td>" +
         frequency + "</td><td>" + arrivalTime + "</td><td>" + minutesAway + "</td><td>");
-
-});
-});
-
-// User adds an entry
-database.ref().on("child_added", function (snapshot) {
-    var name = snapshot.val().name;
-    var destination = snapshot.val().destination;
-    var time = snapshot.val().time;
-    var frequency = snapshot.val().frequency;
-
-
-    var time = moment.unix(time).format("HH:MM")
-    var formattedTime = moment(time, "HH:MM").subtract(1, "years");
-   
-
-    var diffTime = moment().diff(moment(formattedTime), "minutes");
-    var remainder = (diffTime % frequency);
-    var minutesAway = frequency - remainder;
-    console.log(minutesAway);
-
-
-    var nextTrainTime = moment().add(minutesAway, "minutes");
-
-
-
-    // Display data in the table
-    $("#trainTable > tbody").append("<tr><td>" + name + "</td><td>" + destination + "</td><td>" +
-        frequency + "</td><td>" + nextTrain + "</td><td>" + minutesAway + "</td><td>");
 
 });
